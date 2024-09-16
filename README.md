@@ -38,6 +38,8 @@ Installation
    - Create a new database for the application or use an existing one.
    Create db and add tables as follows:
 
+CREATE SCHEMA schema_name;
+
 -- Create the 'categories' table if it does not already exist
 CREATE TABLE IF NOT EXISTS categories (
   id INT AUTO_INCREMENT PRIMARY KEY,
