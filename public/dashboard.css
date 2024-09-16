@@ -1,0 +1,230 @@
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+  background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  display: flex;
+}
+
+header {
+  background-color: #8ab2cd;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #342984;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #342984;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #412945;
+}
+
+input {
+  width: 70%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
+
+form {
+  background: #e1eaf5;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap for better spacing */
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.chart {
+  margin-right: 50px;
+}
+
+.add-expense {
+  text-align: center;
+}
+
+/* Alerts and Messages */
+.alert {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Added gap for better spacing */
+}
+
+.section {
+  flex: 1;
+  margin: 0;
+}
+
+.section form {
+  max-width: 50%;
+}
+
+.chart {
+  max-width: 50%;
+}
+
+input,
+select {
+  padding: 8px;
+  font-size: 12px; /* Reduced font size */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button.edit,
+button.delete {
+  font-size: 10px; /* Smaller font size */
+  padding: 5px 5px; /* Smaller padding */
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer;
+}
+
+button.edit {
+  background-color: #342984;
+  border: none;
+  color: #fff;
+}
+
+button.edit:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+button.delete {
+  background-color: #dc3545; /* Red color for Delete */
+  border: none;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Darker red for hover effect */
+}
+
+
+/* Ensure buttons are aligned next to each other */
+.table-actions {
+  text-align: center;
+  white-space: nowrap; /* Prevents line break */
+  display: flex;
+  gap: 10px; /* Adjust the spacing between buttons as needed */
+}
